@@ -48,3 +48,12 @@ h1, h2, h3, h4 {
 h1 a, h2 a {
     color: #C25100;
 }
+
+#sidebar{
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
