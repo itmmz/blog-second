@@ -8,19 +8,21 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-      <div class = "sidebar">
-        ***サイドバー***
-        <ul>
-        <li>HOME</li>
-        <li>プログラムコード</li>
-        </ul>
-      </div>
-      
+
+
       <div class="page-header">
         {% if user.is_authenticated %}
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
           <h1><a href="/">いとみみず。の備忘録</a></h1>
+
+      <div class = "sidebar">
+            ***サイドバー***
+          <ul>
+            <li>HOME</li>
+            <li>プログラムコード</li>
+          </ul>
+      </div>
 
       </div>
       <div class="content container">
