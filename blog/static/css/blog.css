@@ -12,6 +12,9 @@
 
 .content {
     margin-left: 40px;
+    position: relative;
+    width: 100%;
+    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -56,7 +59,7 @@ h1 a, h2 a {
     color: #C25100;
 }
 
-#container{
+#content container{
   position: relative;
   width: 100%;
   margin: 0;
