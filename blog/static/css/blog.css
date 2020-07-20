@@ -53,8 +53,8 @@ h1, h2, h3, h4 {
 .right-column {
   width:250px;
   min-height:500px;
-  height:auto;
+  height:auto ;
   background-color:#009b9f;
-  float:left;
+  float:right;
   margin-top:10px;
 }
