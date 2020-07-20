@@ -1,6 +1,4 @@
-body {
-    padding-left: 15px;
-}
+
 
 .page-header {
     background-color: #C25100;
@@ -15,8 +13,8 @@ body {
 }
 
 .content {
-    margin-left: 40px;
-    width: 300%
+    margin-left: 300px;
+    width: 80%
 }
 
 h1, h2, h3, h4 {
@@ -32,7 +30,7 @@ h1, h2, h3, h4 {
 }
 
 .post-form textarea, .post-form input {
-    width: 300%;
+    width: 100%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
