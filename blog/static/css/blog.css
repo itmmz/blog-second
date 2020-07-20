@@ -11,7 +11,7 @@
 }
 
 .content {
-    margin-left: 300px;
+    margin-left: 100px;
     width: 80%
 
 }
@@ -53,17 +53,22 @@ h1, h2, h3, h4 {
 }
 
 .text{
-  padding: 0.5em 1em;
+   padding: 0.5em 1em;
     margin: 2em 0;
     background: #f0f7ff;
     border: dashed 2px #5b8bd0;/*点線*/
 }
 
-#right-column {
-  width:250px;
-  min-height:500px;
-  height:auto ;
-  background-color:#009b9f;
-  float:right;
-  margin-top:10px;
+#profile{
+
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #000000;
+}
+
+#menu{
+
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #000000;
 }
