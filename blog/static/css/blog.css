@@ -1,4 +1,3 @@
-
 .page-header {
     background-color: #C25100;
     margin-top: 0;
@@ -11,21 +10,13 @@
     text-decoration: none;
 }
 
-.wrapper {
-
-    width: 100%;
-
-}
-
 .content {
     margin-left: 40px;
-    border : 5px solid maroon
 }
 
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
-
 
 .date {
     color: #828282;
@@ -52,12 +43,4 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
-}
-
-h1 a, h2 a {
-    color: #C25100;
-}
-
-.right-column {
-  width: 10%;
 }
