@@ -10,7 +10,7 @@
     text-decoration: none;
 }
 
-.content {
+.wrapper {
     margin-left: 40px;
     position: relative;
     width: 100%;
@@ -21,21 +21,6 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
-#sidebar{
-  width: 180px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-body {
-  font-size: 90%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 
 .date {
     color: #828282;
@@ -68,9 +53,6 @@ h1 a, h2 a {
     color: #C25100;
 }
 
-#content container{
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.right-column {
+  width: 50%;
 }
