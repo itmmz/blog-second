@@ -1,3 +1,5 @@
+
+
 .page-header {
     background-color: #00FFFF;
     margin-top: 0;
@@ -12,7 +14,7 @@
 
 .content {
     margin-left: 100px;
-    width: 80%
+    width: 80%;
 
 }
 
@@ -33,7 +35,6 @@ h1, h2, h3, h4 {
 
 .post-form textarea, .post-form input {
     width: 100%;
-
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
@@ -52,23 +53,29 @@ h1, h2, h3, h4 {
 
 }
 
-.text{
+.text {
    padding: 0.5em 1em;
     margin: 2em 0;
     background: #f0f7ff;
     border: dashed 2px #5b8bd0;/*点線*/
 }
 
-#profile{
 
+
+#profile {
   margin: 2em 0;
   font-weight: bold;
   border: solid 3px #000000;
+
 }
 
-#menu{
 
+
+#menu{
+  margin-left: 0px;
   margin: 2em 0;
   font-weight: bold;
   border: solid 3px #000000;
+  
+
 }
