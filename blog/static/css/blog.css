@@ -1,3 +1,7 @@
+body {
+    padding-left: 15px;
+}
+
 .page-header {
     background-color: #C25100;
     margin-top: 0;
@@ -14,7 +18,7 @@
     margin-left: 40px;
     text-align: center;
     width: 90%;
-    padding: 0;
+    padding-left: 15px;
 }
 
 h1, h2, h3, h4 {
