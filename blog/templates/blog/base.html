@@ -51,7 +51,7 @@
           <a class="text-muted" href="#">Subscribe</a>
         </div>
         <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark" href="#">Itmmz Memorandum</a>
+          <a class="blog-header-logo text-dark" href="{% url 'post_list' %}">Itmmz Memorandum</a>
         </div>
         <div class="page-header">
           {% if user.is_authenticated %}
@@ -71,10 +71,10 @@
 
     <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">プログラミング</a>
-        <a class="p-2 text-muted" href="#">English</a>
-        <a class="p-2 text-muted" href="#">APEX</a>
-        <a class="p-2 text-muted" href="#">Profile</a>
+        <a class="p-2 text-muted" href="{% url 'post_list' %}">プログラミング</a>
+        <a class="p-2 text-muted" href="{% url 'post_list' %}">English</a>
+        <a class="p-2 text-muted" href="{% url 'post_list' %}">APEX</a>
+        <a class="p-2 text-muted" href="{% url 'post_list' %}">Profile</a>
 
       </nav>
     </div>
@@ -84,7 +84,7 @@
         <h1 class="display-4 font-italic">いとみみず。の備忘録</h1>
         <p class="lead my-3">Python,HTML,CSS勉強用Webサイトです</p>
 
-        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+        <p class="lead mb-0"><a href="{% url 'post_list' %}" class="text-white font-weight-bold">Continue reading...</a></p>
       </div>
     </div>
 
@@ -119,7 +119,7 @@
 
 
         <nav class="blog-pagination">
-          <a class="btn btn-outline-primary" href="#">Older</a>
+          <a class="btn btn-outline-primary" href="{% url 'post_list' %}">Older</a>
           <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
         </nav>
 
@@ -134,7 +134,7 @@
         <div class="p-4">
           <h4 class="font-italic">Archives</h4>
           <ol class="list-unstyled mb-0">
-            <li><a href="#">July 2020</a></li>
+            <li><a href="{% url 'post_list' %}">July 2020</a></li>
           </ol>
         </div>
 
