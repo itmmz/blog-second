@@ -1,5 +1,5 @@
 body {
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .page-header {
@@ -18,7 +18,12 @@ body {
     margin-left: 40px;
     text-align: center;
     width: 90%;
-    padding-left: 15px;
+    padding: 15px;
+}
+
+.content {
+    margin-left: 40px;
+    border : 5px solid maroon
 }
 
 h1, h2, h3, h4 {
