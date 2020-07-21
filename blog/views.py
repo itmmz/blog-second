@@ -65,7 +65,7 @@ def post_remove(request, pk):
 
 def calculation(request):
 
-    return render(request, 'cakculator.html')
+    return render(request, 'calculator.html')
 
 
 def calc(request):
@@ -82,4 +82,4 @@ def calc(request):
 
     }
 
-    return render(request, 'cakculator.html', context)
+    return render(request, 'calculator.html', context)
