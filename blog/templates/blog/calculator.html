@@ -1,20 +1,26 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 
-    <h1>djangoの加算電卓</h1>
+    <h1>djangoの電卓</h1>
 
     <form method="post" action="calc">
 
         {% csrf_token %}
-
+        <nobr style ="font-size:2em">値1 </nobr>
         <input type="number" name="val1" style ="font-size:2em">
-        <nobr style ="font-size:2em">+</nobr>
+        <nobr style ="font-size:2em">値2 </nobr>
         <input type="number" name="val2"style ="font-size:2em">
 
-        <button type="submit"style ="font-size:2em"> =  </button>
+        <button type="submit"style ="font-size:2em"> start  </button>
 
-        <nobr style="font-size:2em">{{ answer }}</nobr>
+        <p style="font-size:2em">{{val1_add}} + {{val2_add}} = {{ answer_add }}</p>
+        <p style="font-size:2em">{{val1_sub}} - {{val2_sub}} = {{ answer_sub }}</p>
 
     </form>
+
+
+
+
+
 
 {% endblock %}

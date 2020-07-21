@@ -74,12 +74,36 @@ def calc(request):
 
     val2 = int(request.POST['val2'])
 
-    answer = val1 + val2
+    answer_add = val1 + val2
+
+    answer_sub = val1 - val2
 
     context = {
+        'val1_add':val1,
+        'val2_add':val2,
+
+        'val1_sub':val1,
+        'val2_sub':val2,
+
+        'answer_add': answer_add,
+        'answer_sub': answer_sub,
+
+    }
+
+    return render(request, 'blog/calculator.html', context)
+
+
+def calc_sub(request):
+    val1 = int(request.POST['val1'])
+
+    val2 = int(request.POST['val2'])
+
+    answer = val1 - val2
+
+    context_sub= {
 
         'answer': answer,
 
     }
 
-    return render(request, 'blog/calculator.html', context)
+    return render(request, 'blog/calculator.html', context_sub)
