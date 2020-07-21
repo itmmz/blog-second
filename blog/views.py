@@ -60,3 +60,26 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('post_list')
+
+
+
+def calculation(request):
+
+    return render(request, 'cakculator.html')
+
+
+def calc(request):
+
+    val1 = int(request.POST['val1'])
+
+    val2 = int(request.POST['val2'])
+
+    answer = val1 + val2
+
+    context = {
+
+        'answer': answer,
+
+    }
+
+    return render(request, 'cakculator.html', context)
