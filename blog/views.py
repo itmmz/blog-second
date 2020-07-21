@@ -43,7 +43,7 @@ def post_edit(request, pk):
 
 def index(request):
 
-    return render(request, 'index.html')
+    return render(request, 'blog/index.html')
 
 
 def calc(request):
@@ -60,4 +60,4 @@ def calc(request):
 
     }
 
-    return render(request, 'index.html', context)
+    return render(request, 'blog/index.html', context)
