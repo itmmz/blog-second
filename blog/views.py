@@ -42,31 +42,13 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
-def calculator(request):
-
-    return render(request, 'blog/calculator.html')
-
-
-def calc(request):
-
-    val1 = int(request.POST['val1'])
-
-    val2 = int(request.POST['val2'])
-
-    answer = val1 + val2
-
-    context = {
-
-        'answer': answer,
-
-    }
-
-    return render(request, 'blog/calculator.html', context)
-
 
 def post_draft_list(request):
     posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
     return render(request, 'blog/post_draft_list.html', {'posts': posts})
+
+
+
 
 def post_publish(request, pk):
     post = get_object_or_404(Post, pk=pk)

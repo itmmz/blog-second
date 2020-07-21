@@ -59,8 +59,6 @@
             <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
           {% endif %}
 
-
-
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
           <a class="text-muted" href="#" aria-label="Search">
@@ -75,7 +73,6 @@
       <nav class="nav d-flex justify-content-between">
         <a class="p-2 text-muted" href="{% url 'post_list' %}">プログラミング</a>
         <a class="p-2 text-muted" href="{% url 'post_list' %}">English</a>
-
         <a class="p-2 text-muted" href="{% url 'post_list' %}">Profile</a>
 
       </nav>
@@ -85,7 +82,6 @@
       <div class="col-md-12 ">
         <h1 class="display-4 font-italic">MIZUKI Home Page</h1>
         <p class="lead my-3">Python,HTML,CSS勉強用Webサイトです</p>
-
         <p class="lead mb-0"><a href="{% url 'post_list' %}" class="text-white font-weight-bold">Continue reading...</a></p>
       </div>
     </div>
@@ -99,7 +95,7 @@
             <h3 class="mb-0">各国の時刻を求めるプログラムコード</h3>
             <div class="mb-1 text-muted">July 21</div>
             <p class="card-text mb-auto">各国のタイムゾーンと、ある国の現在時刻が与えられるので、各国の現在時刻を求めるプログラム</p>
-            <a href="{% url 'post_detail' pk=3 %}" class="stretched-link">Continue reading</a>
+            <a href="{% url 'post_detail' pk=1 %}" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
@@ -116,7 +112,7 @@
             <h3 class="mb-0">計算機開発中</h3>
             <div class="mb-1 text-muted">Coming soon</div>
             <p class="mb-auto">計算機アプリを開発・実装中です</p>
-            <a href="calculator" class="stretched-link">Please wait...</a>
+            <a href="{% url 'post_list' %}" class="stretched-link">Please wait...</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
@@ -135,15 +131,9 @@
         <h3 class="pb-4 mb-4 font-italic border-bottom">
           From the Firehose
 
-
         </h3>
-
         {% block content %}
         {% endblock %}
-
-
-
-
 
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="{% url 'post_list' %}">Older</a>
