@@ -25,7 +25,7 @@ SECRET_KEY = 'guwcre-+qwmp=%c5@b18*#jion@@qz_-3+6$=+(k*4v)=zxe!9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','.itmmz-memorandum.com']
 
 
 # Application definition
