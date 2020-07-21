@@ -41,5 +41,23 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
+def index(request):
+
+    return render(request, 'index.html')
+
+
 def calc(request):
-    return redirect('calculator')
+
+    val1 = int(request.POST['val1'])
+
+    val2 = int(request.POST['val2'])
+
+    answer = val1 + val2
+
+    context = {
+
+        'answer': answer,
+
+    }
+
+    return render(request, 'index.html', context)
