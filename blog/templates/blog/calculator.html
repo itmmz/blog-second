@@ -7,13 +7,13 @@
 
         {% csrf_token %}
 
-        <input type="number" name="val1">
-        +
-        <input type="number" name="val2">
+        <input type="number" name="val1" style ="font-size:2em">
+        <nobr style ="font-size:2em">+</nobr>
+        <input type="number" name="val2"style ="font-size:2em">
 
-        <button type="submit"> = </button>
+        <button type="submit"style ="font-size:2em"> =  </button>
 
-        {{ answer }}
+        <nobr style="font-size:2em">{{ answer }}</nobr>
 
     </form>
 
