@@ -78,6 +78,13 @@ def calc(request):
 
     answer_sub = val1 - val2
 
+    answer_mult = val1 * val2
+
+    if val2 == 0:
+        answer_div = "NAN"
+    else:
+        answer_div = val1/val2
+
     context = {
         'val1_add':val1,
         'val2_add':val2,
@@ -85,25 +92,19 @@ def calc(request):
         'val1_sub':val1,
         'val2_sub':val2,
 
+        'val1_mult':val1,
+        'val2_mult':val2,
+
+        'val1_div':val1,
+        'val2_div':val2,
+
+
+
         'answer_add': answer_add,
         'answer_sub': answer_sub,
+        'answer_mult': answer_mult,
+        'answer_div': answer_div,
 
     }
 
     return render(request, 'blog/calculator.html', context)
-
-
-def calc_sub(request):
-    val1 = int(request.POST['val1'])
-
-    val2 = int(request.POST['val2'])
-
-    answer = val1 - val2
-
-    context_sub= {
-
-        'answer': answer,
-
-    }
-
-    return render(request, 'blog/calculator.html', context_sub)

@@ -11,5 +11,5 @@ urlpatterns = [
     path('drafts/', views.post_draft_list, name='post_draft_list'),
     path('calculator/',views.calculator,name ='calculator'),
     path('calculator/calc', views.calc),
-    path('calculator/calc_sub', views.calc_sub),
+    
 ]
