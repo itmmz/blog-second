@@ -73,12 +73,14 @@ def calc(request):
     if (request.POST['val1'])=="":
         val1 = 0
     else:
-        val1 = int(request.POST['val1'])
+        val1 = float(request.POST['val1'])
+        val1 = int(val1)
 
     if (request.POST['val2'])=="":
         val2 = 0
     else:
-        val2 = int(request.POST['val2'])
+        val2 = float(request.POST['val2'])
+        val2 = int(val2)
 
 
     answer_add = val1 + val2
